@@ -1,4 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  // 输出文件目录
+  outputDir: process.env.outputDir,
 })

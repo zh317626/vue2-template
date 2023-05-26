@@ -33,10 +33,23 @@
 </template>
 
 <script>
+import homeApi from '@/api/home'
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created() {
+    this.getWallpaperClassify()
+  },
+  methods:{
+    getWallpaperClassify() {
+      homeApi.getWallpaperClassify()
+      .then(res=>{
+        console.log(res);
+      })
+    }
   }
 }
 </script>
