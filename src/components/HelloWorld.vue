@@ -41,7 +41,6 @@ export default {
     msg: String
   },
   created() {
-    this.getWallpaperClassify()
   },
   methods:{
     getWallpaperClassify() {

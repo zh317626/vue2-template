@@ -8,7 +8,7 @@ export default {
   getWallpaperClassify(data) {
     return request({
       type:'wall',
-      url: 'v1/vertical/category',
+      url: '****',
       method: 'POST',
       data
     })
@@ -19,10 +19,9 @@ export default {
    * @returns 
    */
   getComputerWallList(params) {
-    // https://www.beiwangshan.com/wp/
     return request({
       type:'computerWall',
-      url: '360wallpaperApi.php',
+      url: '****',
       method: 'GET',
       params
     })
